@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "brand": "Samsung",
+        "model": "Galaxy Fold 5",
+        "isNew": false,
+        "paymentType": "installment",
+        "price": "$35"
+    },
+    {
+        "id": 2,
+        "brand": "Apple",
+        "model": "Galaxy Fold 5",
+        "isNew": true,
+        "paymentType": "upfront",
+        "price": "$1500"
+    },
+    {
+        "id": 3,
+        "brand": "Apple",
+        "model": "Galaxy Fold 5",
+        "isNew": false,
+        "paymentType": "installment",
+        "price": "$35"
+    },
+    {
+        "id": 4,
+        "brand": "Apple",
+        "model": "Galaxy Fold 5",
+        "isNew": false,
+        "paymentType": "installment",
+        "price": "$35"
+    },
+    {
+        "id": 5,
+        "brand": "Apple",
+        "model": "Galaxy Fold 5",
+        "isNew": false,
+        "paymentType": "installment",
+        "price": "$35"
+    }
+]
