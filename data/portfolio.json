@@ -1,0 +1,12 @@
+{
+    "current_balance": 49000,
+    "income": {
+        "last_month": 9600,
+        "change": 500
+    },
+    "expense": {
+        "last_month": 5600,
+        "change": 500
+    },
+    "percent_change": -5.1
+}

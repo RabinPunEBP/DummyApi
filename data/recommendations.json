@@ -5,7 +5,8 @@
         "model": "Galaxy Fold 5",
         "isNew": false,
         "paymentType": "installment",
-        "price": "$35"
+        "price": "$35",
+        "url": "https://www.vitikart.com.fj/30-sam319"
     },
     {
         "id": 2,
@@ -13,7 +14,8 @@
         "model": "Galaxy Fold 5",
         "isNew": true,
         "paymentType": "upfront",
-        "price": "$1500"
+        "price": "$1500",
+        "url": "https://www.vitikart.com.fj/30-sam319"
     },
     {
         "id": 3,
@@ -21,7 +23,8 @@
         "model": "Galaxy Fold 5",
         "isNew": false,
         "paymentType": "installment",
-        "price": "$35"
+        "price": "$35",
+        "url": "https://www.vitikart.com.fj/30-sam319"
     },
     {
         "id": 4,
@@ -29,7 +32,8 @@
         "model": "Galaxy Fold 5",
         "isNew": false,
         "paymentType": "installment",
-        "price": "$35"
+        "price": "$35",
+        "url": "https://www.vitikart.com.fj/30-sam319"
     },
     {
         "id": 5,
@@ -37,6 +41,7 @@
         "model": "Galaxy Fold 5",
         "isNew": false,
         "paymentType": "installment",
-        "price": "$35"
+        "price": "$35",
+        "url": "https://www.vitikart.com.fj/30-sam319"
     }
 ]

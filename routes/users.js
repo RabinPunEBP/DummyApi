@@ -2,10 +2,33 @@ const userRoutes = (app, fs) => {
 
     // variables
     const dataPath = './data/users.json';
+    const portfolioPath = './data/portfolio.json';
+    const chartdataPath = './data/chartdata.json';
+    const assetsPath = './data/assets.json';
 
     // READ
-    app.get('/users', (req, res) => {
-        fs.readFile(dataPath, 'utf8', (err, data) => {
+    app.get('/userPortfolio', (req, res) => {
+        fs.readFile(portfolioPath, 'utf8', (err, data) => {
+            if (err) {
+                throw err;
+            }
+
+            res.send(JSON.parse(data));
+        });
+    });
+
+    app.get('/chartData', (req, res) => {
+        fs.readFile(chartdataPath, 'utf8', (err, data) => {
+            if (err) {
+                throw err;
+            }
+
+            res.send(JSON.parse(data));
+        });
+    });
+
+    app.get('/assets', (req, res) => {
+        fs.readFile(assetsPath, 'utf8', (err, data) => {
             if (err) {
                 throw err;
             }
@@ -15,11 +38,14 @@ const userRoutes = (app, fs) => {
     });
     // READ
     app.get('/user', (req, res) => {
-        fs.readFile('./data/user.json', 'utf8', (err, data) => {
+        let id = req.query.id;
+        console.log(id);
+        // console.log(req);
+        let validId = id < 3 ? id : 0;
+        fs.readFile(`./data/user${validId}.json`, 'utf8', (err, data) => {
             if (err) {
                 throw err;
             }
-
             res.send(JSON.parse(data));
         });
     });
@@ -29,7 +55,6 @@ const userRoutes = (app, fs) => {
             if (err) {
                 throw err;
             }
-
             res.send(JSON.parse(data));
         });
     });
@@ -40,6 +65,14 @@ const userRoutes = (app, fs) => {
                 throw err;
             }
 
+            res.send(JSON.parse(data));
+        });
+    });
+    app.get('/minigames', (req, res) => {
+        fs.readFile('./data/minigames.json', 'utf8', (err, data) => {
+            if (err) {
+                throw err;
+            }
             res.send(JSON.parse(data));
         });
     });
